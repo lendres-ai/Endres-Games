@@ -1,3 +1,3 @@
-# Endres-Games
+# lendres-ai.github.io
 
-Hello World
+is this the front page?
