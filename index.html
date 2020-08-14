@@ -7,13 +7,12 @@
         <meta name="author" content="" />
         <title>Endres-Games</title>
         <!-- unity stuff -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="shortcut icon" href="TemplateData/favicon.ico">
         <link rel="stylesheet" href="TemplateData/style.css">
         <script src="TemplateData/UnityProgress.js"></script>
         <script src="Build/UnityLoader.js"></script>
         <script>
-            var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webglV3.json", {onProgress: UnityProgress});
+            var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webbsite.json", {onProgress: UnityProgress});
         </script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -47,19 +46,21 @@
                 </div>
             </div>
         </nav>
+
+        <div class="webgl-content">
+            <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                <div class="title">Pokeman 2020</div>
+            </div>
+        </div>
+
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
-                <div class="webgl-content">
-                    <div id="unityContainer" style="width: 960px; height: 600px"></div>
-                    <div class="footer">
-                        <div class="webgl-logo"></div>
-                        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-                        <div class="title">Pokeman 2020</div>
-                    </div>
-                </div>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Endres-Games</h1>
                 <!-- Icon Divider-->
